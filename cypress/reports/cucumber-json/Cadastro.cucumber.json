@@ -1,0 +1,663 @@
+[
+  {
+    "description": "Como usuário, desejo realizar novos cadastrados\nPara que possa utilizar o sistema",
+    "keyword": "Funcionalidade",
+    "name": "Cadastro",
+    "line": 2,
+    "id": "cadastro",
+    "tags": [],
+    "uri": "Cadastro.feature",
+    "elements": [
+      {
+        "id": "cadastro;visualizar-a-tela-de-cadastro-em-estado-inicial",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Visualizar a tela de cadastro em estado inicial",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que acesso o site prova.stefanini",
+            "result": {
+              "status": "passed",
+              "duration": 2815000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 9,
+            "name": "Carregar a página",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 10,
+            "name": "o campo Nome, E-mail e Senha devem estar vazios",
+            "result": {
+              "status": "passed",
+              "duration": 155000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 11,
+            "name": "o botão Cadastrar deve estar habilitado",
+            "result": {
+              "status": "passed",
+              "duration": 37000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 12,
+            "name": "não deverá aparecer a listagem de usuários",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-sem-preenchimento-do-nome",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Cadastro sem preenchimento do Nome",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 16,
+            "name": "que acesso o site prova.stefanini",
+            "result": {
+              "status": "passed",
+              "duration": 525000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 17,
+            "name": "preencho o campo E-mail e o campo Senha",
+            "result": {
+              "status": "passed",
+              "duration": 1106000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 18,
+            "name": "eu clicar em Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 19,
+            "name": "retornará a mensagem O campo Nome é obrigatório",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 20,
+            "name": "não deverá cadastrar o usuário",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-sem-preenchimento-do-e-mail",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Cadastro sem preenchimento do E-mail",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 23,
+            "name": "que acesso o site prova.stefanini",
+            "result": {
+              "status": "passed",
+              "duration": 326000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 24,
+            "name": "preencho o campo Nome e o campo Senha",
+            "result": {
+              "status": "passed",
+              "duration": 900000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 25,
+            "name": "eu clicar em Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 109000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 26,
+            "name": "retornará a mensagem O campo E-mail é obrigatório",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 27,
+            "name": "não deverá cadastrar o usuário",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-sem-preenchimento-da-senha",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Cadastro sem preenchimento da Senha",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 30,
+            "name": "que acesso o site prova.stefanini",
+            "result": {
+              "status": "passed",
+              "duration": 334000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 31,
+            "name": "preencho o campo Nome e o campo E-mail",
+            "result": {
+              "status": "passed",
+              "duration": 977000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 32,
+            "name": "eu clicar em Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 103000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 33,
+            "name": "retornará a mensagem O campo Senha é obrigatório",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 34,
+            "name": "não deverá cadastrar o usuário",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-sem-preenchimento-de-todos-os-dados",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Cadastro sem preenchimento de todos os dados",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 37,
+            "name": "que acesso o site prova.stefanini",
+            "result": {
+              "status": "passed",
+              "duration": 394000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 38,
+            "name": "eu não preencher os campos Nome, E-mail e Senha",
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 39,
+            "name": "eu clicar em Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 142000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 40,
+            "name": "retornará a mensagem O campo Nome é obrigatório",
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 41,
+            "name": "retornará a mensagem O campo E-mail é obrigatório",
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 42,
+            "name": "retornará a mensagem O campo Senha é obrigatório",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 43,
+            "name": "não deverá cadastrar o usuário",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-apenas-com-o-primeiro-nome",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "Cadastro apenas com o primeiro nome",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 46,
+            "name": "que acesso o site prova.stefanini",
+            "result": {
+              "status": "passed",
+              "duration": 336000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 47,
+            "name": "preencher apenas o primeiro nome no campo Nome",
+            "result": {
+              "status": "passed",
+              "duration": 226000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 48,
+            "name": "preencher o campo E-mail e preencher o campo Senha",
+            "result": {
+              "status": "passed",
+              "duration": 963000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 49,
+            "name": "eu clicar em Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 89000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 50,
+            "name": "retornará a mensagem Por favor insira um nome completo",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 51,
+            "name": "não deverá cadastrar o usuário",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-com-e-mail-inválido",
+        "keyword": "Scenario",
+        "line": 53,
+        "name": "Cadastro com E-mail inválido",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 54,
+            "name": "que acesso o site prova.stefanini",
+            "result": {
+              "status": "passed",
+              "duration": 303000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 55,
+            "name": "eu preencho o campo Nome e o campo Senha",
+            "result": {
+              "status": "passed",
+              "duration": 718000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 56,
+            "name": "preencher o campo E-mail inválido",
+            "result": {
+              "status": "passed",
+              "duration": 375000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 57,
+            "name": "eu clicar em Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 93000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 58,
+            "name": "retornará a mensagem Por favor insira um e-mail válido",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 59,
+            "name": "não deverá cadastrar o usuário",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-com-senha-menor-que-8-caracteres",
+        "keyword": "Scenario",
+        "line": 61,
+        "name": "Cadastro com Senha menor que 8 caracteres",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 62,
+            "name": "que acesso o site prova.stefanini",
+            "result": {
+              "status": "passed",
+              "duration": 300000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 63,
+            "name": "eu preencher o campo Nome e o campo E-mail",
+            "result": {
+              "status": "passed",
+              "duration": 917000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 64,
+            "name": "preencher o campo Senha com menos de 8 caracteres",
+            "result": {
+              "status": "passed",
+              "duration": 224000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 65,
+            "name": "eu clicar em Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 97000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 66,
+            "name": "retornará a mensagem A senha deve conter ao menos 8 caracteres",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 67,
+            "name": "não deverá cadastrar o usuário",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-de-usuário-com-sucesso",
+        "keyword": "Scenario",
+        "line": 69,
+        "name": "Cadastro de Usuário com Sucesso",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 70,
+            "name": "que acesso o site prova.stefanini",
+            "result": {
+              "status": "passed",
+              "duration": 324000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 71,
+            "name": "preencher os campos Nome, E-mail e Senha com dados válidos",
+            "result": {
+              "status": "passed",
+              "duration": 3894000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 72,
+            "name": "eu clicar em Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 96000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 73,
+            "name": "os dados que foram cadastrados deverão ser exibidos em uma tabela abaixo do formulário de cadastro",
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 74,
+            "name": "a tabela deverá exibir os usuários ordenados pelo ID de forma crescentes",
+            "result": {
+              "status": "passed",
+              "duration": 71000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 75,
+            "name": "visualizar o botão excluir ao lado de cada registro",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;exclusão-de-usuário-cadastrado",
+        "keyword": "Scenario",
+        "line": 77,
+        "name": "Exclusão de Usuário Cadastrado",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 78,
+            "name": "que eu já tenho dados cadastrados no site prova.stefanini",
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 79,
+            "name": "eu clicar em Excluir um usuário",
+            "result": {
+              "status": "passed",
+              "duration": 118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 80,
+            "name": "o usuário selecionado deve ser excluído",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 81,
+            "name": "os demais registros não devem sofrer alteração em seus ID's",
+            "result": {
+              "status": "passed",
+              "duration": 46000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
