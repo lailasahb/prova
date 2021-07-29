@@ -1,0 +1,315 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 10,
+    "passes": 1,
+    "pending": 0,
+    "failures": 9,
+    "start": "2021-07-29T20:41:36.347Z",
+    "end": "2021-07-29T20:42:37.770Z",
+    "duration": 61423,
+    "testsRegistered": 10,
+    "passPercent": 10,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7e718fa4-96e5-48b9-9611-4c9c60e65ce8",
+      "title": "",
+      "fullFile": "cypress/integration/cadastro.spec.js",
+      "file": "cypress/integration/cadastro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5ca66f97-6d81-409b-b086-335e2381fb28",
+          "title": "Cadastro de Usuários ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visualizar a tela de cadastro em estado inicial",
+              "fullTitle": "Cadastro de Usuários  Visualizar a tela de cadastro em estado inicial",
+              "timedOut": null,
+              "duration": 2789,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_Cadastro[\"default\"].acessarCadastro();\ncy.get('input[id*=name]').should('be.empty');\ncy.get('input[id*=email]').should('be.empty');\ncy.get('input[id*=password]').should('be.empty');\ncy.get('button[id*=register]').should('be.exist');\ncy.get('td[id*=tdUserId]').should('not.exist');",
+              "err": {},
+              "uuid": "66923dfa-5cfa-4f10-bad9-8006ab7e3202",
+              "parentUUID": "5ca66f97-6d81-409b-b086-335e2381fb28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cadastro sem preenchimento do Nome",
+              "fullTitle": "Cadastro de Usuários  Cadastro sem preenchimento do Nome",
+              "timedOut": null,
+              "duration": 6632,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_Cadastro[\"default\"].acessarCadastro();\n_Cadastro[\"default\"].InformarEmailValido();\n_Cadastro[\"default\"].InformarSenhaValida();\n_Cadastro[\"default\"].Cadastrar();\ncy.get('p[class*=error]').contains('O campo Nome é obrigatório.').should('be.exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Cadastro.Cadastrar (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:186:10)\n    at Context.eval (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:30:26)",
+                "diff": null
+              },
+              "uuid": "a684a52a-6a8d-4dcc-a951-3527a9003f59",
+              "parentUUID": "5ca66f97-6d81-409b-b086-335e2381fb28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cadastro sem preenchimento do E-mail",
+              "fullTitle": "Cadastro de Usuários  Cadastro sem preenchimento do E-mail",
+              "timedOut": null,
+              "duration": 5907,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_Cadastro[\"default\"].acessarCadastro();\n_Cadastro[\"default\"].InformarNomeCompleto();\n_Cadastro[\"default\"].InformarSenhaValida();\n_Cadastro[\"default\"].Cadastrar();\ncy.get('p[class*=error]').contains('O campo E-mail é obrigatório.').should('be.exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Cadastro.Cadastrar (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:186:10)\n    at Context.eval (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:41:26)",
+                "diff": null
+              },
+              "uuid": "c6009df1-14c1-4cd5-9820-c3a73d961e17",
+              "parentUUID": "5ca66f97-6d81-409b-b086-335e2381fb28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cadastro sem preenchimento da Senha",
+              "fullTitle": "Cadastro de Usuários  Cadastro sem preenchimento da Senha",
+              "timedOut": null,
+              "duration": 6508,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_Cadastro[\"default\"].acessarCadastro();\n_Cadastro[\"default\"].InformarNomeCompleto();\n_Cadastro[\"default\"].InformarEmailValido();\n_Cadastro[\"default\"].Cadastrar();\ncy.get('p[class*=error]').contains('O campo Senha é obrigatório.').should('be.exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Cadastro.Cadastrar (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:186:10)\n    at Context.eval (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:52:26)",
+                "diff": null
+              },
+              "uuid": "3a9d0b7d-196b-485f-ad85-93918bea6ee3",
+              "parentUUID": "5ca66f97-6d81-409b-b086-335e2381fb28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cadastro sem preenchimento de todos os dados",
+              "fullTitle": "Cadastro de Usuários  Cadastro sem preenchimento de todos os dados",
+              "timedOut": null,
+              "duration": 4932,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_Cadastro[\"default\"].acessarCadastro();\n_Cadastro[\"default\"].Cadastrar();\ncy.get('p[class*=error]').contains('O campo Nome é obrigatório.').should('be.exist');\ncy.get('p[class*=error]').contains('O campo E-mail é obrigatório.').should('be.exist');\ncy.get('p[class*=error]').contains('O campo Senha é obrigatório.').should('be.exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Cadastro.Cadastrar (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:186:10)\n    at Context.eval (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:59:26)",
+                "diff": null
+              },
+              "uuid": "28848eed-9bee-46f0-a901-51a228e9b122",
+              "parentUUID": "5ca66f97-6d81-409b-b086-335e2381fb28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validação de cadastro com nome completo",
+              "fullTitle": "Cadastro de Usuários  Validação de cadastro com nome completo",
+              "timedOut": null,
+              "duration": 6657,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_Cadastro[\"default\"].acessarCadastro();\ncy.get('input[id*=name]').type(faker.name.firstName());\n_Cadastro[\"default\"].InformarEmailValido();\n_Cadastro[\"default\"].InformarSenhaValida();\n_Cadastro[\"default\"].Cadastrar();\ncy.get('p[class*=error]').contains('Por favor, insira um nome completo.').should('be.exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Cadastro.Cadastrar (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:186:10)\n    at Context.eval (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:74:26)",
+                "diff": null
+              },
+              "uuid": "10a351c1-79da-44e5-9abc-caa97f2143ac",
+              "parentUUID": "5ca66f97-6d81-409b-b086-335e2381fb28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validação de cadastro com e-mail inválido",
+              "fullTitle": "Cadastro de Usuários  Validação de cadastro com e-mail inválido",
+              "timedOut": null,
+              "duration": 7441,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_Cadastro[\"default\"].acessarCadastro();\n_Cadastro[\"default\"].InformarNomeCompleto();\ncy.get('input[id*=email]').type('testelaila.com');\n_Cadastro[\"default\"].InformarSenhaValida();\n_Cadastro[\"default\"].Cadastrar();\ncy.get('p[class*=error]').contains('Por favor, insira um e-mail válido.').should('be.exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Cadastro.Cadastrar (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:186:10)\n    at Context.eval (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:87:26)",
+                "diff": null
+              },
+              "uuid": "54f52904-303e-4357-8488-ac3fb2d886cc",
+              "parentUUID": "5ca66f97-6d81-409b-b086-335e2381fb28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validação de senha menor que 8 caracteres",
+              "fullTitle": "Cadastro de Usuários  Validação de senha menor que 8 caracteres",
+              "timedOut": null,
+              "duration": 6593,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_Cadastro[\"default\"].acessarCadastro();\n_Cadastro[\"default\"].InformarNomeCompleto();\n_Cadastro[\"default\"].InformarEmailValido();\ncy.get('input[id*=password]').type('1234');\n_Cadastro[\"default\"].Cadastrar();\ncy.get('p[class*=error]').contains('A senha deve conter ao menos 8 caracteres.').should('be.exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Cadastro.Cadastrar (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:186:10)\n    at Context.eval (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:100:26)",
+                "diff": null
+              },
+              "uuid": "c8db28b8-df4b-4234-a922-57c192e442a1",
+              "parentUUID": "5ca66f97-6d81-409b-b086-335e2381fb28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cadastro de Usuário com Sucesso",
+              "fullTitle": "Cadastro de Usuários  Cadastro de Usuário com Sucesso",
+              "timedOut": null,
+              "duration": 6913,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_Cadastro[\"default\"].acessarCadastro(); //abaixo, estou adicionando 3 cadastros de usuários\n\n_Cadastro[\"default\"].InformarTodosDadosValidos();\n_Cadastro[\"default\"].Cadastrar();\n_Cadastro[\"default\"].InformarTodosDadosValidos();\n_Cadastro[\"default\"].Cadastrar();\n_Cadastro[\"default\"].InformarTodosDadosValidos();\n_Cadastro[\"default\"].Cadastrar(); //Acredito que há uma solução melhor pra a validação de ordem crescente \n\ncy.get('td[id*=tdUserId]').contains('1').should('be.exist');\ncy.get('td[id*=tdUserId]').contains('2').should('be.exist');\ncy.get('td[id*=tdUserId]').contains('3').should('be.exist');\ncy.get('a[id*=removeUser]').should('be.exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Cadastro.Cadastrar (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:186:10)\n    at Context.eval (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:111:26)",
+                "diff": null
+              },
+              "uuid": "56263b1f-a108-4a22-9188-4bb80b22549e",
+              "parentUUID": "5ca66f97-6d81-409b-b086-335e2381fb28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Exclusão de Usuário",
+              "fullTitle": "Cadastro de Usuários  Exclusão de Usuário",
+              "timedOut": null,
+              "duration": 5304,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[id=removeUser1]').click();\ncy.get('[id=removeUser1]').should('not.exist');\ncy.get('td[id*=tdUserId]').contains('2').should('be.exist');\ncy.get('td[id*=tdUserId]').contains('3').should('be.exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=removeUser1]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=removeUser1]`, but never found it.\n    at Context.eval (http://prova.stefanini-jgr.com.br/__cypress/tests?p=cypress\\integration\\cadastro.spec.js:129:8)",
+                "diff": null
+              },
+              "uuid": "eb6dd583-1de4-41ed-a6b2-2d409aaaee58",
+              "parentUUID": "5ca66f97-6d81-409b-b086-335e2381fb28",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "66923dfa-5cfa-4f10-bad9-8006ab7e3202"
+          ],
+          "failures": [
+            "a684a52a-6a8d-4dcc-a951-3527a9003f59",
+            "c6009df1-14c1-4cd5-9820-c3a73d961e17",
+            "3a9d0b7d-196b-485f-ad85-93918bea6ee3",
+            "28848eed-9bee-46f0-a901-51a228e9b122",
+            "10a351c1-79da-44e5-9abc-caa97f2143ac",
+            "54f52904-303e-4357-8488-ac3fb2d886cc",
+            "c8db28b8-df4b-4234-a922-57c192e442a1",
+            "56263b1f-a108-4a22-9188-4bb80b22549e",
+            "eb6dd583-1de4-41ed-a6b2-2d409aaaee58"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 59676,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

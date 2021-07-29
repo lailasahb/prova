@@ -1,0 +1,6 @@
+#dependencias
+node_modules/
+
+#outros
+.DS_Store
+

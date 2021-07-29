@@ -1,0 +1,6 @@
+{
+    "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
+    "baseUrl": "http://prova.stefanini-jgr.com.br/",
+    "watchForFileChanges": false,
+    "testFiles": "**/*.{feature,features}"
+}
